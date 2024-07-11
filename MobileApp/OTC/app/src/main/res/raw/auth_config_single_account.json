@@ -1,0 +1,16 @@
+{
+  "client_id": "c7d4dc4e-457e-487d-b921-b38274c0387b",
+  "authorization_user_agent": "DEFAULT",
+  "redirect_uri": "msauth://com.example.otc/cfUO4CUSpLQUqGpNGg9201m4n6M%3D",
+  "account_mode": "SINGLE",
+  "broker_redirect_uri_registered": false,
+  "authorities": [
+    {
+      "type": "AAD",
+      "audience": {
+        "type": "AzureADandPersonalMicrosoftAccount"
+      },
+      "default": true
+    }
+  ]
+}

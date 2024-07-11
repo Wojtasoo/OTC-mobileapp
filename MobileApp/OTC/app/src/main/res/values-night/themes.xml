@@ -1,0 +1,12 @@
+<!-- themes-night.xml -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for dark mode. -->
+    <style name="Base.Theme.OTC.Dark" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorControlHighlight">@color/white</item>
+    </style>
+
+
+    <style name="Theme.OTC.Dark" parent="Base.Theme.OTC.Dark" />
+</resources>

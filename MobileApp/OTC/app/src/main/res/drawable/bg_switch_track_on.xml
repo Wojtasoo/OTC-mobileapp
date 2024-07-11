@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is an example; adjust colors and appearance as needed -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/my_primary_variant" />
+    <corners android:radius="20dp" />
+    <size android:height="24dp" />
+</shape>
+
+

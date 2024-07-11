@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/buttonLinkEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:text="Link Email"
+        android:textColor="?attr/colorOnBackground"/>
+
+    <Button
+        android:id="@+id/buttonLinkGoogleDrive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLinkEmail"
+        android:text="Link Google Drive"
+        android:textColor="?attr/colorOnBackground"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/buttonLinkOneDrive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLinkGoogleDrive"
+        android:text="Link OneDrive"
+        android:textColor="?attr/colorOnBackground"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/buttonShowStorages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLinkOneDrive"
+        android:text="Show Storage Services"
+        android:textColor="?attr/colorOnBackground"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/buttonPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonShowStorages"
+        android:text="PIN Settings"
+        android:textColor="?attr/colorOnBackground"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/buttonBiometric"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Biometric Login"
+        android:textColor="?attr/colorOnBackground"
+        android:layout_below="@id/buttonPin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:visibility="gone"/> <!-- Initially hidden -->
+
+    <Button
+        android:id="@+id/buttonDeleteAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonBiometric"
+        android:text="Delete Account"
+        android:textColor="?attr/colorOnBackground"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
