@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#008000</color>
+    <color name="circle_ring_color">#4CAF50</color>
+    <color name="my_primary_variant">#FF3700B3</color>
+    <color name="my_light_primary">#FF7E57C2</color>
+    <color name="backgroundColor">#FFFFFFFF</color>
+    <color name="textColorPrimary">#FF000000</color>
+    <color name="iconColor">#FFFFFF</color>
+    <color name="title_OTC_color">#FFFFFF</color>
+    <color name="primary">#ff212121</color>
+
+</resources>

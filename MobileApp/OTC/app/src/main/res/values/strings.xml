@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OTC</string>
+    <string name="web_client_id">832412096444-sgo05ujsl6rtee5i2q4pnvhutcni6guo.apps.googleusercontent.com</string>
+    <string name="drive_client_id">832412096444-sfaas9q3l5o79pg82517g3f259lss2gd.apps.googleusercontent.com</string>
+    <string name="client_secret">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</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="logo_name">XTP</string>
+</resources>

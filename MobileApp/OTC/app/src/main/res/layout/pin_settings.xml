@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Set PIN Button -->
+    <Button
+        android:id="@+id/buttonPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set PIN"
+        android:textColor="?attr/colorOnBackground"
+        android:layout_marginTop="24dp" />
+
+    <!-- Change PIN Button -->
+    <Button
+        android:id="@+id/buttonChangePin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonPin"
+        android:text="Change PIN"
+        android:textColor="?attr/colorOnBackground"
+        android:layout_marginTop="18dp" />
+
+    <!-- Delete PIN Button -->
+    <Button
+        android:id="@+id/buttonDeletePin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete PIN"
+        android:textColor="?attr/colorOnBackground"
+        android:layout_marginTop="18dp"/>
+
+</LinearLayout>

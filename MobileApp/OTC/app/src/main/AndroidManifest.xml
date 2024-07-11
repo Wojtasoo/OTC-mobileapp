@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.OTC"
+        tools:targetApi="31"
+        android:networkSecurityConfig="@xml/network_security_config">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="com.example.otc.ACTION_CLOSE_APP" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".OneDriveAPI"
+            android:launchMode="singleTask"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="msauth"
+                    android:host="com.example.otc"
+                    android:path="/cfUO4CUSpLQUqGpNGg9201m4n6M%3D" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".HomePageActivity">
+            <!-- other attributes -->
+        </activity>
+
+        <activity android:name=".SignMainActivity">
+            <!-- other attributes -->
+        </activity>
+        <activity android:name=".SignInActivity">
+            <!-- Add any additional attributes as needed -->
+        </activity>
+        <activity android:name=".SignUpActivity">
+            <!-- Add any additional attributes as needed -->
+        </activity>
+
+        <activity android:name=".GoogleLoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            <!-- Add any additional attributes as needed -->
+        </activity>
+
+        <activity android:name=".GoogleDriveService" />
+
+        <activity android:name=".VerificationCodeActivity">
+            <!-- other attributes -->
+        </activity>
+
+        <activity android:name=".BiometricLogin" />
+
+        <activity android:name="com.microsoft.identity.client.BrowserTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="com.example.otc"
+                    android:path="/cfUO4CUSpLQUqGpNGg9201m4n6M="
+                    android:scheme="msauth" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.games.APP_ID"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.gms.auth.api.signin.API_KEY"
+            android:value="@string/web_client_id" />
+
+    </application>
+
+</manifest>

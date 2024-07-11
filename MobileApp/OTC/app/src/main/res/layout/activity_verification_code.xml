@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextVerificationCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Verification Code"
+        android:textColorHint="?attr/android:textColorPrimary"
+        android:inputType="number"
+        android:layout_centerInParent="true"
+        android:ems="10"/>
+
+    <Button
+        android:id="@+id/buttonVerify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:textColor="?attr/colorOnBackground"
+        android:layout_below="@id/editTextVerificationCode"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/buttonResendCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resend Code"
+        android:textColor="?attr/colorOnBackground"
+        android:layout_below="@id/buttonVerify"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

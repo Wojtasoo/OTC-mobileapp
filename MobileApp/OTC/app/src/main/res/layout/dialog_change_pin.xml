@@ -1,0 +1,72 @@
+<!-- res/layout/fragment_change_pin.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Current PIN EditText -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current PIN:"
+        android:textColor="?attr/android:textColorPrimary"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextCurrentPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:hint="Enter current PIN"
+        android:textColorHint="?attr/android:textColorPrimary"
+        android:layout_marginTop="8dp"/>
+
+    <!-- New PIN EditText -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New PIN:"
+        android:textColor="?attr/android:textColorPrimary"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextNewPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:hint="Enter new PIN"
+        android:textColorHint="?attr/android:textColorPrimary"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Confirm PIN EditText -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm New PIN:"
+        android:textColor="?attr/android:textColorPrimary"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextConfirmPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:hint="Confirm new PIN"
+        android:textColorHint="?attr/android:textColorPrimary"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Change PIN Button -->
+    <Button
+        android:id="@+id/buttonChangePin"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="?attr/colorOnBackground"
+        android:text="Change PIN"
+        android:textColor="?attr/colorOnBackground" />
+
+</LinearLayout>
