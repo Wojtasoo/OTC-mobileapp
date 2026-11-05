@@ -1,0 +1,4 @@
+.idea
+.vscode
+./OTC/app/google-services.json
+./OTC/app/src/main/res/values/strings.xml
